@@ -2,32 +2,32 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial;
-    color: #333;
+    font-family: Helvetica;
+    color: rgb(174, 39, 236);/*cor da letra do body to do list*/
     box-sizing: border-box;
 }
 
 body{
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/newpurple.jpg");
     background-position: center;
     background-size: cover; /*adaptar a tela do usuário*/
 }
 
 button{
-background-color: #fdfdfd;
-color: #102f5e;
-border: 2px solid #102f5e;
+background-color: #d6ee8e;/*fundo do botao*/
+color: #f00ed9;
+border: 2px solid #eaebde;
 padding: .3rem .6rem;/*adapta a tela responsividade*/
 font-size: 1rem;
 cursor: pointer;
 display:flex;
 justify-content: center;
 align-items: center;/*centralizar o icone do botao*/
-transition: 0.3s;
+transition: 0.4s;
 }
 
 button:hover {
-    background-color:#102f5e;
+    background-color:#709ee3;
 }
 
 button:hover > i {
@@ -35,7 +35,7 @@ button:hover > i {
 }
 
 button i {
-    color: #102f5e;
+    color: #ed865ddb;
     font-weight: bold;
     pointer-events: none;
 }
@@ -53,36 +53,35 @@ input,
 .todo-container{
     max-width: 450px;
     margin: 3rem auto 0;
-    background-color: #fdfdfd;
+    background-color: #2be7e1;/*body to do list*/
     padding: 1.5rem;
     border-radius: 15px;
 }
 /*titulo*/
 .todo-container header {
     text-align: center;
-    padding: 0 1rem 1 rem;
+    padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;/* traço abaixo do titulo*/
 }
 
 /* todo Form */ 
-#todo-form,
- #edit-form {
+#todo-form, #edit-form {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #CCC;
 }
 
 #todo-form p,
- #edit-form p{
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+#edit-form p {
+ margin-bottom: 0.5rem;
+ font-weight: bold;
 } 
 
 .form-control {
-    display:flex;
+  display: flex;
 }
 
 .form-control input {
-    margin-right: 0.3rem;
+ margin-right: 0.3rem;
 }
 
 #cancel-edit-btn {
@@ -111,7 +110,7 @@ input,
 }
 
 #search form {
-    display: flex;
+    display: flex; /* insere o botao ao lado do input*/
 }
 
 #search input {
@@ -126,7 +125,7 @@ input,
 }
 
 #filter select {
-    flex: 1;
+    flex: 1; /*form ocupa o espaço*/
 }
 
 /* todo list*/
@@ -148,13 +147,13 @@ input,
     margin-left: 0.4rem; /*afastamento entre  os botoes*/
 }
 
-.done{
-    background-color:#395169;
+.done{ /*cor do fundo lista tarefa*/
+    background-color:#ac95eb;
 }
 
 .done h3{
     color:#fff;
-    text-decoration: line-through;
+    text-decoration: line-through;/*linha cortando o texto*/
     font-style: italic;
 }
 
